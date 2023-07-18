@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        ChatGPTtoMD
-// @version     3.3
+// @version     3.3.1
 // @author      snacksbtw
 // @description Script to allow downloading ChatGPT threads as markdown files.
 // @match       https://chat.openai.com/*
@@ -53,7 +53,7 @@ window.addEventListener('load', getSelectedConversation);
 // Create a function to add the button to the collapsible menu
 function addButtonToMenu() {
   // Select the collapsible menu
-  const menu = document.querySelector('.flex.h-full.flex-1.flex-col.space-y-1.p-2');
+  const menu = document.querySelector('.mb-1');
   // If the menu does not exist, try again after a short delay
   if (!menu) {
     setTimeout(addButtonToMenu, 500);
